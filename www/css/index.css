@@ -35,8 +35,6 @@
     align-items: center;
     justify-content: space-between;
     margin: 5%;
-    background-color: var(--white);
-    margin-bottom: 25px;
 }
 
 .title-logo{
@@ -57,13 +55,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 20px;
 }
 
 .search .input{
     background-color: var(--ice);
     padding: 10px;
     width: 90%;
-    border-radius: 5px;
+    border-radius: 10px;
     position: absolute;
 }
 
@@ -73,13 +72,9 @@
     font-size: 20px;
 }
 
-.page-content{
-    margin: 5%;
-}
-
 .swiper {
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    margin-top: 20px;
 }
 
 .swiper-slide {
@@ -96,18 +91,25 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+}
+
+.categories{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .categories .titulo{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 90%;
 }
 
 .categories .titulo h2{
     font-size: 20px;
-    font-weight: 300;
 }
 
 .categories .titulo a{
@@ -125,43 +127,74 @@
 .btn-swiper.active{
     background-color: var(--green);
     color: var(--white);
+    border: none;
+}
+
+.secao-produtos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 150px;
+    margin-top: 20px;
 }
 
 .produtos{
     display: flex;
-    align-items: center;
-    justify-content: start;
     flex-wrap: wrap;
     flex-direction: row;
+    /* margin: 15px 3%; */
+    width: 90%;
 }
 
 .image-content{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: 200px;
     border-radius: 10px;
     background-color: var(--ice);
+    margin-bottom: 10px;
+}
+
+.imagem-produto{
+    width: 150px;
 }
 
 .item{
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
-    height: 240px;
     flex: 45%;
-    border: 1px solid red;
-    margin-right: 5px;
-    margin-bottom: 5px;
+    margin: 5px;
 }
 
-.imagem-produto{
-    width: 100%;
-}
-
-.nome{
+.nome-preco{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.nome-item{
+    font-size: 13px;
+    color: gray;
+}
+
+.avaliacao-item{
+    font-weight: 700;
+}
+
+.preco span{
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.star{
+    color: yellow;
+    margin-right: 5px;
+}
+
+.thumb{
+    color: var(--green);
+    margin-right: 5px;
 }
