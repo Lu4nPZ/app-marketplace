@@ -34,10 +34,134 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
+    margin: 5%;
     background-color: var(--white);
+    margin-bottom: 25px;
 }
 
 .title-logo{
+    font-size: 30px;
     font-weight: 600;
+}
+
+.btn-car i{
+    border: 1px solid var(--black);
+    border-radius: 50px;
+    padding: 10px;
+    color: var(--black);
+    font-size: 20px;
+}
+
+.search{
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search .input{
+    background-color: var(--ice);
+    padding: 10px;
+    width: 90%;
+    border-radius: 5px;
+    position: absolute;
+}
+
+.search i{
+    position: relative;
+    left: 40%;
+    font-size: 20px;
+}
+
+.page-content{
+    margin: 5%;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.categories .titulo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.categories .titulo h2{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.categories .titulo a{
+    color: var(--green);
+}
+
+.btn-swiper{
+    border: 1px solid var(--black);
+    border-radius: 10px;
+    padding: 5px;
+    background-color: var(--white);
+    cursor: pointer;
+}
+
+.btn-swiper.active{
+    background-color: var(--green);
+    color: var(--white);
+}
+
+.produtos{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.image-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 50%;
+    border-radius: 10px;
+    background-color: var(--ice);
+}
+
+.item{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    height: 240px;
+    flex: 45%;
+    border: 1px solid red;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.imagem-produto{
+    width: 100%;
+}
+
+.nome{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
