@@ -43,16 +43,15 @@
     background-color: var(--white);
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
-    margin-top: -50px;
+    margin-top: -20px;
     padding: 5%;
-    position: relative;
-    z-index: 99;
 }
 
 .titulo{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 20px;
 }
 
 .nome{
@@ -68,4 +67,87 @@
     font-size: 10px;
     width: 70px;
     text-align: center;
+}
+
+.avaliacao{
+    font-size: 15px;
+    border: 1px solid gray;
+    border-radius: 20px;
+    padding: 7px;
+    margin-right: 5px;
+    font-weight: 700;
+}
+
+.curtidas{
+    font-size: 15px;
+    border: 1px solid gray;
+    border-radius: 20px;
+    padding: 7px;
+    margin-right: 5px;
+    font-weight: 700;
+}
+
+.visualizacoes{
+    font-size: 12px;
+    color: gray;
+}
+
+.descricao{
+    font-weight: 500;
+}
+
+.btn-configuracao{
+    display: flex;
+    gap: 10px;
+}
+
+.btn-configuracao a{
+    border: 2px solid black;
+    background-color: var(--white);
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+.btn-configuracao .active{
+    background-color: var(--green);
+    color: var(--white);
+    border: none;
+}
+
+.toolbar{
+    height: 80px;
+    border-top: 1px solid var(--ice);
+}
+
+.toolbar-inner{
+    background-color: var(--white);
+    border-top: 1px solid var(--ice);
+    gap: 10%;
+}
+
+.preco-antes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.riscado{
+    text-decoration: line-through;
+    color: gray;
+}
+
+.preco{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.btn-carrinho{
+    border: none;
+    background-color: var(--green);
+    width: 200px;
+    height: 50px;
+    border-radius: 15px;
+    color: var(--white);
+    font-size: 17px;
 }
