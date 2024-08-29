@@ -43,11 +43,12 @@
 }
 
 .btn-car i{
-    border: 1px solid var(--black);
+    border: 1px solid gray;
     border-radius: 50px;
     padding: 10px;
     color: var(--black);
     font-size: 20px;
+    font-weight: bold;
 }
 
 .search{
@@ -92,6 +93,11 @@
     height: 100%;
     object-fit: cover;
     margin-bottom: 10px;
+}
+
+.swiper-wrapper{
+    display: flex;
+    align-items: center;
 }
 
 .categories{
@@ -142,7 +148,6 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    /* margin: 15px 3%; */
     width: 90%;
 }
 
@@ -167,6 +172,11 @@
     flex-direction: column;
     flex: 45%;
     margin: 5px;
+}
+
+.item .info-item{
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
 }
 
 .nome-preco{
@@ -197,4 +207,8 @@
 .thumb{
     color: var(--green);
     margin-right: 5px;
+}
+
+.gelo{
+    background-color: var(--ice) !important;
 }
