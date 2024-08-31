@@ -3,13 +3,13 @@ fetch('js/backend.json')
 .then(data =>{
     localStorage.setItem('produtos', JSON.stringify(data))
 
-    function aparecerProdutos(){
+    function produtosIndex(){
         const produtosContainer = document.querySelector('.produtos')
         let produtos = ''
 
         data.forEach(produto =>{
             produtos += `<div class="item">
-                                <a href="/detalhes/">
+                                <a data-id="${produto.id} href="#">
                                     <div class="image-content">
                                         <img class="imagem-produto" src="${produto.imagem}" alt="airpods">
                                     </div>
@@ -19,7 +19,7 @@ fetch('js/backend.json')
                                             <span class="avaliacao-item"><i class=" star ri-star-fill"></i>${produto.rating}</span>
                                         </div>
                                         <div class="preco">
-                                            <span>${produto.preco_promocional}</span>
+                                            <span>${produto.preco_promocional.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}</span>
                                         </div>
                                     </div>
                                 </a>
@@ -30,9 +30,11 @@ fetch('js/backend.json')
             produtosContainer.innerHTML = produtos
         }, 1000);
     }
+    produtosIndex()
 
-    console.log(data);
-
-    aparecerProdutos()
+    $(".item").on('click', function (){
+        var id = $(this).attr('data-id')
+        localStorage.setItem('detalhe, id');
+    })
 })
 .catch(error => console.error('Erro ao fazer fetch dos dados' +error))

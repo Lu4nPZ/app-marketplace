@@ -42,8 +42,8 @@
                 "detalhes": "Resistente a respingos e suor, ideal para uso durante exercícios físicos"
             }
         ],
-        "preco": "$239.99",
-        "preco_promocional": "$229.99"
+        "preco": 239.99,
+        "preco_promocional": 229.99
     },
     {
         "id": 2,
@@ -92,8 +92,8 @@
                 "detalhes": "Recursos de segurança avançados, incluindo reconhecimento facial e autenticação biométrica"
             }
         ],
-        "preco": "$15599.99",
-        "preco_promocional": "$14999.99"
+        "preco": 15599.99,
+        "preco_promocional": 14999.99
     },
     {
         "id": 3,
@@ -142,8 +142,8 @@
                 "detalhes": "Capaz de suportar até 120 frames por segundo para uma jogabilidade ultrafluida"
             }
         ],
-        "preco": "$3999.99",
-        "preco_promocional": "$3799.99"
+        "preco": 3999.99,
+        "preco_promocional": 3799.99
     },
     {
         "id": 4,
@@ -192,7 +192,7 @@
                 "detalhes": "Recursos avançados, incluindo Touch ID para desbloqueio seguro e pagamentos"
             }
         ],
-        "preco": "$8999.99",
-        "preco_promocional": "$8699.99"
+        "preco": 8999.99,
+        "preco_promocional": 8699.99
     }
 ]
