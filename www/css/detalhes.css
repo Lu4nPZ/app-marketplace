@@ -151,3 +151,16 @@
     color: var(--white);
     font-size: 17px;
 }
+
+th,
+td{
+    padding: 10px 5px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+}
+
+th{
+    background-color: #ddd;
+}

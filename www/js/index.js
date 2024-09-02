@@ -3,13 +3,13 @@ fetch('js/backend.json')
 .then(data =>{
     localStorage.setItem('produtos', JSON.stringify(data))
 
-    function produtosIndex(){
-        const produtosContainer = document.querySelector('.produtos')
-        let produtos = ''
 
-        data.forEach(produto =>{
-            produtos += `<div class="item">
-                                <a data-id="${produto.id} href="#">
+    setTimeout(() => {
+        $('#produtos').empty()
+
+    data.forEach(produto =>{
+        var produtoHTML = `<div class="item">
+                                <a data-id="${produto.id} href="#" class="produto">
                                     <div class="image-content">
                                         <img class="imagem-produto" src="${produto.imagem}" alt="airpods">
                                     </div>
@@ -24,17 +24,22 @@ fetch('js/backend.json')
                                     </div>
                                 </a>
                             </div>`
+
+        $('#produtos').append(produtoHTML)
+    })
+
+        $('.produto').on('click', function (){
+            var id = $(this).attr('data-id')
+            localStorage.setItem('detalhe', id)
+            app.views.main.router.navigate('/detalhes/')
         })
 
-        setTimeout(() => {
-            produtosContainer.innerHTML = produtos
-        }, 1000);
-    }
-    produtosIndex()
-
-    $(".item").on('click', function (){
-        var id = $(this).attr('data-id')
-        localStorage.setItem('detalhe, id');
-    })
+    }, 1000);
 })
 .catch(error => console.error('Erro ao fazer fetch dos dados' +error))
+
+setTimeout(() => {
+    var carrinho = JSON.parse(localStorage.getItem('carrinho')) || []
+
+    $('.btn-car').attr('data-count', carrinho.length)
+}, 300);

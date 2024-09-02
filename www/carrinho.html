@@ -50,7 +50,7 @@
                         <div class="popover-inner">
                             <div class="list">
                             <ul>
-                                <li><a id="esvaziar" href="/dialog/" class="list-button popover-close">Esvaziar Carrinho</a></li>
+                                <li><a id="esvaziar" href="/dialog/" class="list-button popover-close">Limpar Carrinho</a></li>
                             </ul>
                             </div>
                         </div>
@@ -58,11 +58,11 @@
                 </nav>
 
                 <!-- TAB BAR-->
-            <div style="margin-bottom: 80px;" id="carrinho" class="toolbar toolbar-bottom">
+            <div style="margin-bottom: 80px;" id="valor-carrinho" class="toolbar toolbar-bottom">
                 <div id="totais" class="toolbar-inner display-flex align-items-center justify-content-center">
                     <div class="bd-bottom margin-top w-80 display-flex justify-content-space-between">
                         <span>Subtotal: </span>
-                        <span class="bold">R$ 800</span>
+                        <span id="subtotal" class="bold"></span>
                     </div>
                     <div class="w-80 display-flex justify-content-space-between">
                         <span>Frete: </span>
@@ -71,7 +71,7 @@
                 </div>
             </div>
 
-            <div id="carrinho" class="toolbar toolbar-bottom">
+            <div id="comprar" class="toolbar toolbar-bottom">
                 <div class="toolbar-inner display-flex align-items-center justify-content-center">
                     <div class="flex-100">
                         <button class="btn-carrinho">Comprar</button>
@@ -83,72 +83,6 @@
                 <!-- Scrollable page content -->
                 <div class="page-content">
                     <ul class="lista-carrinho">
-                        <li class="item-carrinho">
-                            <div class="area-img">
-                                <img src="./img/default.png" alt="produto">
-                            </div>
-                            <div class="item-details">
-                                <div class="nome">
-                                    <span class="nome-produto">Xbox Series X</span>
-                                    <a class="delete-item" href="#"><i class="ri-close-fill"></i></a>
-                                </div>
-                                <div class="configuracao">
-                                    <span>1 TB</span>
-                                </div>
-                                <div class="preco-quantidade">
-                                    <span>R$ 99.500</span>
-                                    <div class="count">
-                                        <a class="minus" href="#">-</a>
-                                        <input readonly class="qtd-item" type="text" value="1">
-                                        <a class="plus" href="#">+</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="item-carrinho">
-                            <div class="area-img">
-                                <img src="./img/default.png" alt="produto">
-                            </div>
-                            <div class="item-details">
-                                <div class="nome">
-                                    <span class="nome-produto">Xbox Series X</span>
-                                    <a class="delete-item" href="#"><i class="ri-close-fill"></i></a>
-                                </div>
-                                <div class="configuracao">
-                                    <span>1 TB</span>
-                                </div>
-                                <div class="preco-quantidade">
-                                    <span>R$ 99.500</span>
-                                    <div class="count">
-                                        <a class="minus" href="#">-</a>
-                                        <input readonly class="qtd-item" type="text" value="1">
-                                        <a class="plus" href="#">+</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="item-carrinho">
-                            <div class="area-img">
-                                <img src="./img/default.png" alt="produto">
-                            </div>
-                            <div class="item-details">
-                                <div class="nome">
-                                    <span class="nome-produto">Xbox Series X</span>
-                                    <a class="delete-item" href="#"><i class="ri-close-fill"></i></a>
-                                </div>
-                                <div class="configuracao">
-                                    <span>1 TB</span>
-                                </div>
-                                <div class="preco-quantidade">
-                                    <span>R$ 99.500</span>
-                                    <div class="count">
-                                        <a class="minus" href="#">-</a>
-                                        <input readonly class="qtd-item" type="text" value="1">
-                                        <a class="plus" href="#">+</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
                     </ul>
                 </div>
             </div>

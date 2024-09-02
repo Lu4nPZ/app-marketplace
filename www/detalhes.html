@@ -42,8 +42,8 @@
             <div id="adicionar-carrinho" class="toolbar toolbar-bottom">
                 <div class="toolbar-inner display-flex align-items-center justify-content-center">
                     <div class="preco-antes">
-                        <span class="riscado">R$ 850,00</span>
-                        <div class="preco">R$ 729,83</div>
+                        <span id="preco-detalhe" class="riscado">R$ 850,00</span>
+                        <div id="precopromocional-detalhe" class="preco">R$ 729,83</div>
                     </div>
                     <div>
                         <button class="btn-carrinho">Adicionar Carrinho</button>
@@ -61,27 +61,28 @@
                             <a href=""><i class="ri-share-fill"></i></a>
                         </div>
     
-                        <img class="img-produto" src="./img/default.png" alt="airpods">
+                        <img id="imagem-detalhe" class="img-produto" src="./img/default.png" alt="airpods">
                     </div>
                     <div class="info-item">
                         <div class="titulo">
-                            <span class="nome"></span>
-                            <span class="promocao"></span>
+                            <span id="nome-detalhe" class="nome"></span>
+                            <span class="promocao">Promoção</span>
                         </div>
     
                         <div class="avaliacao-visualizacoes">
-                            <span class="avaliacao"><i class=" star ri-star-fill"></i></span>
-                            <span class="curtidas"><i class=" thumb ri-thumb-up-fill"></i></span>
-                            <span class="visualizacoes"></span>
+                            <span class="avaliacao"><i class=" star ri-star-fill"></i><span id="rating-detalhe"></span></span>
+                            <span class="curtidas"><i class=" thumb ri-thumb-up-fill"></i><span id="like-detalhe"></span></span>
+                            <span id="reviews-detalhe" class="visualizacoes"></span>
                         </div>
 
                         <div class="especificacoes">
-                            <p class="descricao"></p>
-                            <div class="btn-configuracao">
-                                <a class="active"></a>
-                                <a></a>
-                                <a></a>
-                            </div>
+                            <p id="descricao-detalhe" class="descricao"></p>
+                            <table id="tabdetalhes">
+                                <tr>
+                                    <th>Características</th>
+                                    <th>Detalhes</th>
+                                </tr>
+                            </table>
                         </div>
                     </div>
                 </div>
