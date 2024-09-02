@@ -177,3 +177,7 @@
 .bold{
     font-weight: bold;
 }
+
+.btn-carrinho{
+    cursor: pointer;
+}
