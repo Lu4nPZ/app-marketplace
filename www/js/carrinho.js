@@ -60,9 +60,10 @@ function carrinhoVazio(){
 
     $('.lista-carrinho').html(`
         <div class="text-align-center">
-            <img width="300" src="img/empty.gif">
+            <img width="300"; src="img/empty.gif">
             <br><span class="color-gray">Nada por enquanto</span>
-        </div>`)
+        </div>`
+    )
 }
 
 $('#esvaziar').on('click', function(){
